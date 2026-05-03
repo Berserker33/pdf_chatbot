@@ -49,7 +49,7 @@ Answer ONLY from document.
 If not found say: Not in document.
 
 DOCUMENT:
-{text[:12000]}
+{text[:120000]}
 
 QUESTION:
 {question}
@@ -84,7 +84,7 @@ def upload():
         "stats": {
             "characters": len(text),
             "words": len(text.split()),
-            "truncated": len(text) > 12000
+            "truncated": len(text) > 120000
         }
     })
 
